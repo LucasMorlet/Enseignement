@@ -1,6 +1,6 @@
 //#define TEST_GLUT // freeglut (anciennement GLUT) permet de créer un contexte OpenGL (ie. une fenêtre d'affichage)
-//#define TEST_GLEW // GLEW permet de tester quelles fonctionnalités OpenGL sont disponibles sur votre système
-#define TEST_GLM // GLM est une bibliothèque de fonctions mathématiques très utiles en graphisme (eg. matrices de transformations)
+#define TEST_GLEW // GLEW permet de tester quelles fonctionnalités OpenGL sont disponibles sur votre système
+//#define TEST_GLM // GLM est une bibliothèque de fonctions mathématiques très utiles en graphisme (eg. matrices de transformations)
 
 #ifdef WIN32
 #endif

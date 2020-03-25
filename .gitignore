@@ -1,2 +1,3 @@
-build*
-Info4B*
+# Les fichiers de configurations et de compilations QtCreator
+*/build/*
+*.user
