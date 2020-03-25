@@ -23,7 +23,8 @@ HEADERS += GL/glew.h
 HEADERS += GL/wglew.h
 #HEADERS += glm/glm.hpp
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    test_glm.cpp
 SOURCES += test_glut.cpp
 SOURCES += test_glew.cpp
 SOURCES += test_glui.cpp
