@@ -24,6 +24,7 @@ HEADERS += GL/wglew.h
 #HEADERS += glm/glm.hpp
 
 SOURCES += main.cpp \
+    test_eigen.cpp \
     test_glm.cpp
 SOURCES += test_glut.cpp
 SOURCES += test_glew.cpp

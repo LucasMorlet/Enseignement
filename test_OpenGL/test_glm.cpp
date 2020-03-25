@@ -5,7 +5,7 @@
 #include <glm/gtx/string_cast.hpp>
 #include <iostream>
 
-void print_matrix ( glm::mat4x4 matrice, int precision )
+void print_glm_matrix ( const glm::mat4x4 &matrice, int precision )
 {
     if ( precision > 6 ) precision = 6;
     float cast = pow(10.0, precision);
@@ -25,7 +25,7 @@ void print_matrix ( glm::mat4x4 matrice, int precision )
     }
 }
 
-void test_glm()
+void test_glm ( void )
 {
     float Translate = 5.0f;
     glm::vec2 Rotate = glm::vec2(1.0f, 2.0f);
@@ -35,7 +35,7 @@ void test_glm()
     View = glm::rotate(View, Rotate.x, glm::vec3(0.0f, 1.0f, 0.0f));
     glm::mat4 Model = glm::scale(glm::mat4(1.0f), glm::vec3(0.5f));
     glm::mat4 MVP = Projection * View * Model;
-    print_matrix( MVP, 2 );
+    print_glm_matrix( MVP, 2 );
     /* Display expected :
 
     |  0.48, -0.92, -0.17, -0.17 |
