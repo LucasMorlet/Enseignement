@@ -1,7 +1,7 @@
 //#define TEST_GLUT // freeglut (anciennement GLUT) permet de créer un contexte OpenGL (ie. une fenêtre d'affichage)
-//#define TEST_GLEW // GLEW permet de tester quelles fonctionnalités OpenGL sont disponibles sur votre système
+#define TEST_GLEW // GLEW permet de tester quelles fonctionnalités OpenGL sont disponibles sur votre système
 //#define TEST_GLM // GLM est une bibliothèque de fonctions mathématiques très utiles en graphisme (eg. matrices de transformations)
-#define TEST_EIGEN // Eigen est une bibliothèque de fonctions mathématiques (en particulier d'algèbre linéaire)
+//#define TEST_EIGEN // Eigen est une bibliothèque de fonctions mathématiques (en particulier d'algèbre linéaire)
 
 #if defined(TEST_GLUT)
     #include "test_glut.cpp"
@@ -26,7 +26,7 @@ int main ( int argc, char* argv[] )
     #elif defined(TEST_GLEW)
         test_glew( argc, argv );
     #else
-        std::cout << "Vous devez utiliser #define TEST_GLUT ou TEST_GLEW pour  leur installation" << std::endl;
+        std::cout << "Vous devez utiliser #define TEST_GLUT ou TEST_GLEW pour tester leur installation" << std::endl;
     #endif
     #ifdef TEST_GLM
         test_glm();

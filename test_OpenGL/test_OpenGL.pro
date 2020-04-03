@@ -21,11 +21,9 @@ HEADERS += GL/freeglut_std.h
 HEADERS += GL/freeglut_ext.h
 HEADERS += GL/glew.h
 HEADERS += GL/wglew.h
-#HEADERS += glm/glm.hpp
 
-SOURCES += main.cpp \
-    test_eigen.cpp \
-    test_glm.cpp
-SOURCES += test_glut.cpp
-SOURCES += test_glew.cpp
-SOURCES += test_glui.cpp
+SOURCES += src/main.cpp
+SOURCES += src/test_glut.cpp
+SOURCES += src/test_glew.cpp
+SOURCES += src/test_glm.cpp
+SOURCES += src/test_eigen.cpp
